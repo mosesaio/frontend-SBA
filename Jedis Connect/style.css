@@ -1,0 +1,193 @@
+/* External CSS file - style.css */
+
+/* Grid layout for main content */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Element selector for body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #8f65a0;
+    margin: 0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-image: url("1.jpg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Class selector for header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ID selectors for forms (used in register and login pages) */
+#registerForm,
+#loginForm {
+    display: grid;
+    flex-direction: column;
+}
+
+/* Descendant selector for nav links */
+/* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Pseudo-class for hover on nav links
+nav ul li a:hover {
+    background-color: #555;
+}
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+td, th {
+    border-collapse: separate;
+    border: thick double #999;
+    padding: 15px;
+
+}
+.active {
+    background-color: #1e421d;
+    float: right;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: hotpink;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #cdcd75;
+    text-decoration: underline;
+}
+
+.signin a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    color: #cdcd75;
+    text-decoration: underline;
+}
+
+
+* {box-sizing: border-box}
+
+.container {
+    padding: 19px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+button[type=submit] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #501818;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
